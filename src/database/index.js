@@ -1,0 +1,14 @@
+const { default: mongoose } = require("mongoose");
+
+const connectToDB = async () => {
+  const connectionURL = process.env.MONGODB_URL;
+
+  mongoose
+    .connect(connectionURL,{
+      serverSelectionTimeoutMS: 30000, // 30 seconds
+    })
+    .then(() => console.log("jon board database connection is successfull"))
+    .catch((error) => console.log(error));
+};
+
+export default connectToDB;
