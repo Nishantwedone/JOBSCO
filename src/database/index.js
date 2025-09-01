@@ -4,9 +4,7 @@ const connectToDB = async () => {
   const connectionURL = process.env.MONGODB_URL;
 
   mongoose
-    .connect(connectionURL,{
-      serverSelectionTimeoutMS: 30000, // 30 seconds
-    })
+    .connect(connectionURL)
     .then(() => console.log("jon board database connection is successfull"))
     .catch((error) => console.log(error));
 };

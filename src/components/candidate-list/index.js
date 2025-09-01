@@ -8,7 +8,7 @@ import {
   updateJobApplicationAction,
 } from "@/actions";
 import { createClient } from "@supabase/supabase-js";
-const supabaseUrl = 'https://tboaqocjqdkbwxitcvda.supabase.co'
+const supabaseUrl = 'https://wgjikkcgzyakwfsmvovr.supabase.co'
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_KEY
 const supabaseClient = createClient(supabaseUrl, supabaseKey)
 
